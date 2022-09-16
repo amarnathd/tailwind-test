@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tailwind Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="./dist/main.css" rel="stylesheet">
+</head>
+<body>
+  <section class="chs-mainWarp w-full mx-auto">
+    <!--Left panel-->
+    <div class="chs-leftPanel">
+      <aside class="chs-leftSidebar">
+        <!--Logo-->
+        <div class="chs-logo">
+          <img src="./images/logo.svg" alt="image">
+        </div>
+        <!--Logo-->
+        <div class="chs-switchBtn">
+          <button class="btn btn-violate active">Personal</button>
+          <button class="btn btn-violate">Business</button>
+        </div>
+         <!--Nav-->
+        <nav class="chs-nav">
+          <ul>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>                
+                Email
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                </svg>       
+                Security
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>            
+                Goales
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                </svg>              
+                Calender
+              </a>
+            </li>
+          </ul>
+          <div class="chs-devider"></div>
+          <span>Account</span>
+          <ul>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                </svg>                
+                Chat
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                </svg>       
+                Notification
+                <span class="notification">08</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                </svg>                       
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!--Nav-->
+      </aside>
+    </div>
+    <!--Left panel-->
+    <!--Right panel-->
+    <div class="chs-mainBox">
+      <div class="chs-mainBoxLeft">
+        <div class="chs-gridBoxes">
+          <!-- grid list -->
+          <div class="chs-gridBoxesList">
+            <div class="chs-gridBoxesTitle">
+              <div class="chs-gridBoxesTitleLeft">
+                <div class="chs-gridBoxesImage">
+                  <img src="./images/image.jpg" alt="image">
+                </div>
+              </div>
+              <div class="chs-gridBoxesTitleRight">
+                <h2>Dogecoin Nerds</h2>
+                <span>36 members</span>
+                <div class="icon-bookmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="chs-gridContent">
+              <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="chs-gridContentTag">
+              <a href="#" class="tag">#dogecoin</a>
+              <a href="#" class="tag">#crypto</a>
+            </div>
+          </div>
+          <!-- grid list -->
+          <!-- grid list -->
+          <div class="chs-gridBoxesList">
+            <div class="chs-gridBoxesTitle">
+              <div class="chs-gridBoxesTitleLeft">
+                <div class="chs-gridBoxesImage">
+                  <img src="./images/image.jpg" alt="image">
+                </div>
+              </div>
+              <div class="chs-gridBoxesTitleRight">
+                <h2>Dogecoin Nerds</h2>
+                <span>36 members</span>
+                <div class="icon-bookmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="chs-gridContent">
+              <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="chs-gridContentTag">
+              <a href="#" class="tag">#dogecoin</a>
+              <a href="#" class="tag">#crypto</a>
+            </div>
+          </div>
+          <!-- grid list -->
+          <!-- grid list -->
+          <div class="chs-gridBoxesList">
+            <div class="chs-gridBoxesTitle">
+              <div class="chs-gridBoxesTitleLeft">
+                <div class="chs-gridBoxesImage">
+                </div>
+              </div>
+              <div class="chs-gridBoxesTitleRight">
+                <h2>Dogecoin Nerds</h2>
+                <span>36 members</span>
+                <div class="icon-bookmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="chs-gridContent">
+              <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="chs-gridContentTag">
+              <a href="#" class="tag">#dogecoin</a>
+              <a href="#" class="tag">#crypto</a>
+            </div>
+          </div>
+          <!-- grid list -->
+          <!-- grid list -->
+          <div class="chs-gridBoxesList">
+            <div class="chs-gridBoxesTitle">
+              <div class="chs-gridBoxesTitleLeft">
+                <div class="chs-gridBoxesImage">
+                  
+                </div>
+              </div>
+              <div class="chs-gridBoxesTitleRight">
+                <h2>Dogecoin Nerds</h2>
+                <span>36 members</span>
+                <div class="icon-bookmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="chs-gridContent">
+              <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="chs-gridContentTag">
+              <a href="#" class="tag">#dogecoin</a>
+              <a href="#" class="tag">#crypto</a>
+            </div>
+          </div>
+          <!-- grid list -->
+        </div>
+      </div>
+      <div class="chs-mainBoxRight">
+        <div class="chs-slectBox">
+          <div class="chs-slectBoxSelect custom-select">
+            <select>
+              <option value="0">Basic Options</option>
+              <option value="1">Steven Johnson</option>
+              <option value="2">Interface Settings</option>
+              <option value="3">Color Theme</option>
+              <option value="4">Wallpaper</option>
+              <option value="5">Notification</option>
+              <option value="6">Alerts</option>
+              <option value="7">Email</option>
+              <option value="8">Push Notification</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!--Right panel-->
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+  <script src="./js/custom.js"></script>
+</body>
+</html>

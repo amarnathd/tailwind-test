@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-white;
+  }
+}
+@layer components {
+  .btn {
+    @apply text-base text-black px-6 py-4 rounded transition-all;
+  }
+  .btn-violate {
+    @apply hover:text-violate;
+  }
+}
+
+@layer utilities {
+  .chs-devider {
+    @apply w-full h-px bg-gray-white my-7;
+  }
+}
+.chs-mainWarp {
+  @apply w-full mx-auto flex flex-row flex-wrap min-h-screen;
+}
+
+/* left panel */
+.chs-leftPanel {
+  @apply flex py-6 px-5 border-r border-gray-white;
+}
+.chs-leftSidebar {
+  @apply flex flex-col flex-wrap sm:w-64;
+}
+
+.chs-switchBtn {
+  @apply mt-6 border border-gray-white rounded flex justify-between shadow-[0_0px_1px_0px_rgba(0,0,0,0.1)];
+}
+.chs-switchBtn .btn {
+  @apply w-1/2;
+}
+.chs-switchBtn .btn.active {
+  @apply bg-violate text-white;
+}
+/* nav */
+
+.chs-nav {
+  @apply mt-6 ;
+}
+.chs-nav span {
+  @apply text-xs mb-5 block text-gray-dark;
+}
+.chs-nav ul li a {
+  @apply text-base text-gray-dark py-3.5 flex hover:text-violate transition-all relative;
+}
+.chs-nav ul li a svg {
+  @apply mr-6;
+}
+
+.chs-nav ul li a .notification {
+  @apply absolute right-0 top-4 bg-violate w-5 h-5 rounded-full text-[10px] leading-5 text-white text-center ;
+}
+
+/* main box */
+.chs-mainBox {
+  @apply w-0 flex-1 flex py-10 px-5 bg-gray-bg;
+}
+.chs-mainBoxLeft {
+  @apply w-4/5 max-w-3xl;
+}
+.chs-mainBoxRight {
+  @apply w-1/5;
+}
+
+/* Grid boxes */
+.chs-gridBoxes {
+  @apply grid grid-cols-2 gap-4;
+}
+.chs-gridBoxesList {
+  @apply p-7 bg-white border border-gray-white shadow-[0_0px_1px_0px_rgba(0,0,0,0.1)] rounded;
+}
+
+.chs-gridBoxesTitle {
+  @apply flex flex-row justify-start border-b border-gray-white pb-5;
+}
+.chs-gridBoxesImage {
+  @apply mr-3 w-[50px] h-[50px] bg-gray-dark overflow-hidden rounded-full;
+}
+
+.chs-gridBoxesTitleRight {
+  @apply relative w-full;
+}
+.chs-gridBoxesTitleRight h2 {
+  @apply text-lg text-black ;
+}
+
+.chs-gridBoxesTitleRight span {
+  @apply text-xs text-gray-dark;
+}
+
+.chs-gridBoxesTitleRight .icon-bookmark {
+ @apply absolute top-1 right-0 text-black;
+}
+
+.chs-gridContent {
+  @apply py-5;
+}
+
+.chs-gridContent p {
+  @apply text-[13px] text-gray-dark-mid font-normal;
+}
+
+.chs-gridContentTag {
+  @apply flex flex-row justify-start items-center;
+}
+
+.chs-gridContentTag .tag {
+  @apply px-4 py-2.5 bg-blue-200 rounded-full text-xs text-violate mr-5;
+}
+
+.chs-mainBoxRight {
+  @apply pl-4;
+}
+
+.chs-slectBox {
+  @apply h-full w-full relative;
+}
+.chs-slectBoxSelect {
+  @apply relative w-full max-w-[200px];
+}
+.chs-slectBoxSelect select {
+  @apply hidden;
+}
+
+.chs-slectBoxSelect .select-selected {
+  @apply px-4 py-4 text-sm text-gray-dark-mid bg-white border border-gray-white rounded shadow-[0_0px_1px_0px_rgba(0,0,0,0.1)];
+}
+.chs-slectBoxSelect .select-selected:after {
+  @apply absolute w-0 h-0 content-[''] top-[26px] right-[10px] border-[6px] border-[#000_transparent_transparent_transparent];
+}
+
+.chs-slectBoxSelect .select-selected.select-arrow-active:after {
+  @apply top-[20px] border-[transparent_transparent_#000_transparent]
+}
+
+.chs-slectBoxSelect .select-items div {
+  @apply text-sm text-gray-dark-mid py-2 px-4 cursor-pointer;
+  user-select: none;
+}
+
+.chs-slectBoxSelect .select-items div:last-child {
+  @apply border-0;
+}
+
+.chs-slectBoxSelect .select-items {
+  @apply absolute bg-white top-[60px] left-0 right-0 z-[99]  rounded shadow-[0_0px_1px_0px_rgba(0,0,0,0.1)] overflow-hidden;
+}
+
+.chs-slectBoxSelect .select-hide {
+  @apply hidden;
+}
+
+.chs-slectBoxSelect .select-items div:hover {
+  @apply bg-violate text-white transition-all;
+}
+
+.chs-slectBoxSelect .same-as-selected {
+  @apply bg-violate text-white transition-all;
+}
+
+.chs-slectBoxSelect .select-items .same-as-selected {
+  @apply text-white;
+}
